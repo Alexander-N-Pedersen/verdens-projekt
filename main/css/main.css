@@ -37,7 +37,7 @@ html, body, .page {
 }
 
 #p2 {
-  background: url(/images/);
+  background: #bbb;
 }
 
 #p3 {
@@ -124,8 +124,14 @@ html, body, .page {
           transition-delay: .4s !important;
 }
 
-#t2:target #p1,
-#t3:target #p1,
+#t2:target #p1 {
+  background: yellow;
+}
+
+#t3:target #p1 {
+  background: green;
+}
+
 #t4:target #p1,
 #t5:target #p1,
 #t6:target #p1

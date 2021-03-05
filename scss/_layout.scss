@@ -35,7 +35,7 @@ html, body, .page {
   }
   
   #p1 { background: $color-primary; }
-  #p2 { background: url(/images/); }
+  #p2 { background:$color-secondary; }
   #p3 { background: gold; }
   #p4 { background: deeppink; }
   #p5 { background: rebeccapurple; }
@@ -77,8 +77,12 @@ html, body, .page {
     transition-delay: .4s !important;
   }
   
-  #t2:target #p1, 
-  #t3:target #p1,
+  #t2:target #p1{
+    background: yellow;
+  }
+  #t3:target #p1{
+    background: green;
+  }
   #t4:target #p1,
   #t5:target #p1,
   #t6:target #p1
@@ -96,6 +100,7 @@ html, body, .page {
   {
     background: black;
   }
+  
   
   #t2:target #p1 .icon, 
   #t3:target #p1 .icon,
