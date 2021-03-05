@@ -30,7 +30,7 @@ html, body, .page {
     left: 0;
   }
   
-  #p2, #p3, #p4, #p5, #p6 {
+  #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12, #p13, #p14, #p15, #p16, #p17 {
     left: 200%;
   }
   
@@ -40,12 +40,35 @@ html, body, .page {
   #p4 { background: deeppink; }
   #p5 { background: rebeccapurple; }
   #p6 { background: deeppink; }
+  #p7 { background: deeppink; }
+  #p8 { background: deeppink; }
+  #p9 { background: deeppink; }
+  #p10 { background: deeppink; }
+  #p11 { background: deeppink; }
+  #p12 { background: deeppink; }
+  #p13 { background: deeppink; }
+  #p14 { background: deeppink; }
+  #p15 { background: deeppink; }
+  #p16 { background: deeppink; }
+  #p17 { background: deeppink; }
+  
   
   #t2:target #p2,
   #t3:target #p3,
   #t4:target #p4,
   #t5:target #p5,
-  #t6:target #p6
+  #t6:target #p6,
+  #t7:target #p7,
+  #t8:target #p8,
+  #t9:target #p9,
+  #t10:target #p10,
+  #t11:target #p11,
+  #t12:target #p12,
+  #t13:target #p13,
+  #t14:target #p14,
+  #t15:target #p15,
+  #t16:target #p16,
+  #t17:target #p17
   {
     transform: translateX(-190%);
     -webkit-transform: translateX(-190%);
@@ -59,6 +82,17 @@ html, body, .page {
   #t4:target #p1,
   #t5:target #p1,
   #t6:target #p1
+  #t7:target #p1,
+  #t8:target #p1,
+  #t9:target #p1,
+  #t10:target #p1,
+  #t11:target #p1,
+  #t12:target #p1,
+  #t13:target #p1,
+  #t14:target #p1,
+  #t15:target #p1,
+  #t16:target #p1,
+  #t17:target #p1
   {
     background: black;
   }
@@ -67,7 +101,19 @@ html, body, .page {
   #t3:target #p1 .icon,
   #t4:target #p1 .icon,
   #t5:target #p1 .icon,
-  #t6:target #p1 .icon {
+  #t7:target #p1 .icon, 
+  #t7:target #p1 .icon,
+  #t8:target #p1 .icon,
+  #t9:target #p1 .icon,
+  #t10:target #p1 .icon, 
+  #t11:target #p1 .icon, 
+  #t12:target #p1 .icon, 
+  #t13:target #p1 .icon, 
+  #t14:target #p1 .icon, 
+  #t15:target #p1 .icon, 
+  #t16:target #p1 .icon, 
+  #t17:target #p1 .icon 
+  {
     -webkit-filter: blur(3px);
   }
   
@@ -89,7 +135,18 @@ html, body, .page {
   #t3:target ul .icon,
   #t4:target ul .icon,
   #t5:target ul .icon,
-  #t6:target ul .icon
+  #t6:target ul .icon,
+  #t7:target ul .icon,
+  #t8:target ul .icon,
+  #t9:target ul .icon,
+  #t10:target ul .icon,
+  #t11:target ul .icon,
+  #t12:target ul .icon,
+  #t13:target ul .icon,
+  #t14:target ul .icon,
+  #t15:target ul .icon,
+  #t16:target ul .icon,
+  #t17:target ul .icon
   {
     transform: scale(.6);
     -webkit-transform: scale(.6);
@@ -102,7 +159,18 @@ html, body, .page {
   #t3:target #three,
   #t4:target #four,
   #t5:target #five, 
-  #t6:target #six 
+  #t6:target #six, 
+  #t7:target #seven,
+  #t8:target #eight, 
+  #t9:target #nine, 
+  #t10:target #teen,
+  #t11:target #eleven, 
+  #t12:target #twele, 
+  #t13:target #thirteen, 
+  #t14:target #fourteen, 
+  #t15:target #fifteen, 
+  #t16:target #sixteen,
+  #t17:target #seventeen
   {
     transform: scale(1.2) !important;
     -webkit-transform: scale(1.2) !important;
@@ -201,7 +269,18 @@ html, body, .page {
   #t3:target .page#p3 .icon,
   #t4:target .page#p4 .icon,
   #t5:target .page#p5 .icon, 
-  #t6:target .page#p6 .icon 
+  #t6:target .page#p6 .icon, 
+  #t7:target .page#p7 .icon, 
+  #t8:target .page#p8 .icon, 
+  #t9:target .page#p9 .icon, 
+  #t10:target .page#p10 .icon, 
+  #t11:target .page#p11 .icon, 
+  #t12:target .page#p12 .icon, 
+  #t13:target .page#p13 .icon, 
+  #t14:target .page#p14 .icon, 
+  #t15:target .page#p15 .icon, 
+  #t16:target .page#p16 .icon, 
+  #t17:target .page#p17 .icon 
   {
     transform: translateX(0) !important;
     -webkit-transform: translateX(0) !important;
