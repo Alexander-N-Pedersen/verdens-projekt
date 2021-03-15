@@ -1,3 +1,4 @@
+
 html, body, .page {
     width: 100%;
     height: 100%;
@@ -15,44 +16,128 @@ html, body, .page {
     position: absolute;
   }
 
+
   .menu-item{
-    border-radius: 100%;
     margin: 10px;
-    padding: 31px;
-    width: 0px;
-    height: 0px;
+    padding: 25px;
+    width: 100%;
+    height: 0px;  
     background-repeat: no-repeat;
+
+    @media #{$media-mobile} {
+      margin: 100px;
+      padding: 50px;
+    }
   }
 
+  h2{
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: 25rem;
+    font-size: 4rem;
+    font-family: Oswald;
+    text-transform: uppercase;
+    display: flex;
+    text-align: left;
+    color: #fff;
 
-  
+ 
+    
+  }
+
+  .p1-headline{
+    left: -100%;
+  }
+
+  .h2-p1{
+   
+      &:hover{
+        color:#E10D1F;
+      }
+  }
+  /* .h2-p1:hover{
+    color:#E10D1F;
+  } */
+  .h2-p2:hover{
+    color:#D5A200;
+  }
+  .h2-p3:hover{
+    color:#289338;
+  }
+  .h2-p4:hover{
+    color:#C11727;
+  }
+  .h2-p5:hover{
+    color:#E7311C;
+  }
+  .h2-p6:hover{
+    color:#00A6D6;
+  }
+  .h2-p7:hover{
+    color:#FAB800;
+  }
+  .h2-p8:hover{
+    color:#921831;
+  }
+  .h2-p9:hover{
+    color:#EB6410;
+  }
+  .h2-p10:hover{
+    color:#DC0779;
+  }
+  .h2-p11:hover{
+    color:#F69C00;
+  }
+  .h2-p12:hover{
+    color:#D28D0E;
+  }
+  .h2-p13:hover{
+    color:#4A7735;
+  }  
+  .h2-p14:hover{
+    color:#0076B8;
+  }  
+  .h2-p15:hover{
+    color:#40A533;
+  }  
+  .h2-p16:hover{
+    color:#004B86;
+  }  
+  .h2-p17:hover{
+    color:#1B3262;
+  }  
   #p1 {
-    left: 0;
-  }
+    left: 0%;
+    background-repeat: no-repeat;
+
+  } 
   
   #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12, #p13, #p14, #p15, #p16, #p17 {
-    left: 200%;
+    left: 194%;
+    
   }
   
-  #p1 { background: $color-primary; }
-  #p2 { background:$color-secondary; }
-  #p3 { background: gold; }
-  #p4 { background: deeppink; }
-  #p5 { background: rebeccapurple; }
-  #p6 { background: deeppink; }
-  #p7 { background: deeppink; }
-  #p8 { background: deeppink; }
-  #p9 { background: deeppink; }
-  #p10 { background: deeppink; }
-  #p11 { background: deeppink; }
-  #p12 { background: deeppink; }
-  #p13 { background: deeppink; }
-  #p14 { background: deeppink; }
-  #p15 { background: deeppink; }
-  #p16 { background: deeppink; }
-  #p17 { background: deeppink; }
+  #p1 { background: url(/images/Afskaf-Fattigdom.png);background-repeat: no-repeat; }
+  #p2 { background:url(/images/bg-2.png);background-repeat: no-repeat; }
+  #p3 { background: url(/images/bg-3.png);background-repeat: no-repeat; }
+  #p4 { background:url(/images/bg-4.png);background-repeat: no-repeat; }
+  #p5 { background: url(/images/bg-5.png);background-repeat: no-repeat; }
+  #p6 { background: url(/images/bg-6.png);background-repeat: no-repeat; }
+  #p7 { background:url(/images/bg-7.png);background-repeat: no-repeat; }
+  #p8 { background: url(/images/bg-8.png);background-repeat: no-repeat; }
+  #p9 { background: url(/images/bg-9.png);background-repeat: no-repeat; }
+  #p10 { background: url(/images/bg-10.png);background-repeat: no-repeat; }
+  #p11 { background: url(/images/bg-11.png);background-repeat: no-repeat; }
+  #p12 { background: url(/images/bg-12.png);background-repeat: no-repeat; }
+  #p13 { background: url(/images/bg-13.png);background-repeat: no-repeat; }
+  #p14 { background: url(/images/bg-14.png);background-repeat: no-repeat; }
+  #p15 { background: url(/images/bg-15.png);background-repeat: no-repeat; }
+  #p16 { background: url(/images/bg-16.png);background-repeat: no-repeat; }
+  #p17 { background: url(/images/bg-17.png);background-repeat: no-repeat; }
+
   
-  
+  /* Slide function */
+
   #t2:target #p2,
   #t3:target #p3,
   #t4:target #p4,
@@ -76,31 +161,60 @@ html, body, .page {
     -o-transform: translateX(-190%);
     transition-delay: .4s !important;
   }
+
+  /* Background overlay in the menu window */
   
   #t2:target #p1{
-    background: yellow;
+    background:  #D5A200;
   }
   #t3:target #p1{
-    background: green;
+    background: #289338;
   }
-  #t4:target #p1,
-  #t5:target #p1,
-  #t6:target #p1
-  #t7:target #p1,
-  #t8:target #p1,
-  #t9:target #p1,
-  #t10:target #p1,
-  #t11:target #p1,
-  #t12:target #p1,
-  #t13:target #p1,
-  #t14:target #p1,
-  #t15:target #p1,
-  #t16:target #p1,
+  #t4:target #p1{
+    background: #C11727;
+  }
+  #t5:target #p1{
+    background: #E7311C;
+  }
+  #t6:target #p1{
+   background:  #00A6D6;
+  }
+  #t7:target #p1{
+    background: #FAB800;
+  }
+  #t8:target #p1{
+    background: #921831;
+  }
+  #t9:target #p1{
+    background: #EB6410;
+  }
+  #t10:target #p1{
+    background: #DC0779;
+  }
+  #t11:target #p1{
+    background: #F69C00;
+  }
+  #t12:target #p1{
+    background: #D28D0E;
+  }
+  #t13:target #p1{
+    background: #4A7735;
+  }
+  #t14:target #p1{
+    background: #0076B8;
+  }
+  #t15:target #p1{
+    background: #40A533;
+  }
+  #t16:target #p1{
+    background: #004B86;
+  }
   #t17:target #p1
   {
-    background: black;
+    background: #1B3262;
   }
   
+  /* Blur function when it changes images */
   
   #t2:target #p1 .icon, 
   #t3:target #p1 .icon,
@@ -122,135 +236,41 @@ html, body, .page {
     -webkit-filter: blur(3px);
   }
   
-  .icon {
-    color: #fff;
-    font-size: 32px;
-    display: block;
-  }
-  
   ul .icon:hover {
     opacity: 0.5;
   }
   
-  .page .icon .title {
+ /*  .page .icon .title {
     line-height: 2;
-  }
+  } */
   
-  #t2:target ul .icon,
-  #t3:target ul .icon,
-  #t4:target ul .icon,
-  #t5:target ul .icon,
-  #t6:target ul .icon,
-  #t7:target ul .icon,
-  #t8:target ul .icon,
-  #t9:target ul .icon,
-  #t10:target ul .icon,
-  #t11:target ul .icon,
-  #t12:target ul .icon,
-  #t13:target ul .icon,
-  #t14:target ul .icon,
-  #t15:target ul .icon,
-  #t16:target ul .icon,
-  #t17:target ul .icon
-  {
-    transform: scale(.6);
-    -webkit-transform: scale(.6);
-    -moz-transform: scale(.6);
-    -o-transform: scale(.6);
-    transition-delay: .25s;
-  }
-  
-  #t2:target #two,
-  #t3:target #three,
-  #t4:target #four,
-  #t5:target #five, 
-  #t6:target #six, 
-  #t7:target #seven,
-  #t8:target #eight, 
-  #t9:target #nine, 
-  #t10:target #teen,
-  #t11:target #eleven, 
-  #t12:target #twele, 
-  #t13:target #thirteen, 
-  #t14:target #fourteen, 
-  #t15:target #fifteen, 
-  #t16:target #sixteen,
-  #t17:target #seventeen
-  {
-    transform: scale(1.2) !important;
-    -webkit-transform: scale(1.2) !important;
-    -moz-transform: scale(1.2) !important;
-    -o-transform: scale(1.2) !important;
-  }
-  
+
   ul {
     position: fixed;
     z-index: 1;
     top: 0;
     bottom: 0;
-    left: 0;
-    margin: auto;
+    left: 1px;
     height: 100%;
-    width: 10%;
-    padding: 0px;
+    width: -10%;
+    padding: 0;
     text-align: center;
-   }
-  
-  #menu .icon {
-    /* margin: 30px 0; */
-    transition: all .5s ease-out !important;
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-  }
-  
-  a {
     text-decoration: none;
+   }
+
+  a {
+    text-decoration: none; 
   }
-  
-  .title, .hint {
-    display: block;
-  }
-  
-  .title {
-    font-size: 38px;
-  }
-  
-  .hint {
-    font-size: 13px;
-  }
-  
-  #p4 .hint {
-    display: inherit !important;
-  }
-  
-  .hint a {
-    color: yellow;
-    transition: all 250ms ease-out;
-    -webkit-transition: all 250ms ease-out;
-    -moz-transition: all 250ms ease-out;
-    -o-transition: all 250ms ease-out;
-  }
-  
-  .hint a:hover {
-    color: #FFF;
-  }
-  
-  .line-trough {
-    text-decoration: line-through;
-  }
-  
+
   .page .icon {
     position: absolute;
     top: 0;
-    bottom: 0;
-    right: 10%;
-    left: 0;
+    bottom: 80%;
+    right: 90%;
+    left: 10;
     width: 270px;
     height: 170px;
     margin: auto;
-    text-align: center;
-    font-size: 80px;
     line-height: 1.3;
     transform: translateX(360%);
     -webkit-transform: translateX(360%);
@@ -265,10 +285,8 @@ html, body, .page {
   .page#p1 .icon {
     height: 220px;
   }
-  
-  .page#p1 .icon {
-    transform: translateX(10%) !important;
-  }
+
+  /* title moving */
   
   #t2:target .page#p2 .icon,
   #t3:target .page#p3 .icon,
@@ -293,3 +311,5 @@ html, body, .page {
     -o-transform: translateX(0) !important;
     transition-delay: 1s;
   }
+
+  
